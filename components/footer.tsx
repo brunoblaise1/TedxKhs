@@ -41,7 +41,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Quick Links</h3>
 =======
           <div>
-            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">Quick Links</h3>
 >>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             <ul className="space-y-3">
               <li>
@@ -72,7 +72,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Contact</h3>
 =======
           <div>
-            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">Contact</h3>
+            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">Contact</h3>
 >>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             <ul className="space-y-3">
               <li className="text-gray-400 text-sm">Kigali High School</li>
@@ -87,7 +87,7 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">About TEDx</h3>
             <p className="text-gray-400 text-sm">
 =======
-            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">About TEDx</h3>
+            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">About TEDx</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
 >>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
               x = independently organized TED event. In the spirit of ideas worth spreading, TEDx is a program of local,
@@ -99,7 +99,7 @@ export function Footer() {
 <<<<<<< HEAD
         <div className="border-t border-white mt-12 pt-6 text-center text-gray-500 text-sm">
 =======
-        <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-white mt-16 pt-8 text-center text-gray-500 text-sm">
 >>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
           <p>© {new Date().getFullYear()} TEDx Kigali High School Youth. All rights reserved.</p>
           <p className="mt-2">TEDx, x = independently organized TED event.</p>

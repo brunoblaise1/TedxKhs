@@ -49,7 +49,7 @@ export function EventTheme() {
                 community. TEDx events are fully planned and coordinated independently, on a community-by-community
                 basis. The content and design of each TEDx event is unique and developed by each organizing team, but
 =======
-            <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 md:p-10">
+            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-8 md:p-10">
               <p className="text-base text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and
                 performances are shared with the community. TEDx events are
