@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
@@ -5,10 +8,47 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin } from "lucide-react"
+import { Toaster, toast } from "sonner"
 
 export default function ContactPage() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      })
+
+      if (res.ok) {
+        toast.success("Message sent successfully!")
+        setName("")
+        setEmail("")
+        setSubject("")
+        setMessage("")
+      } else {
+        toast.error("Failed to send message.")
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.")
+    } finally {
+      setLoading(false)
+    }
+  }
+
   return (
     <main className="min-h-screen bg-black text-white">
+      <Toaster position="top-center" />
       <Navbar />
 
       <section className="pt-32 pb-16 bg-black relative overflow-hidden">
@@ -100,11 +140,18 @@ export default function ContactPage() {
                 <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8">
                   <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
 
-                  <form className="space-y-6">
+                  <form className="space-y-6" onSubmit={handleSubmit}>
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Your Name</Label>
-                        <Input id="name" name="name" className="bg-black/60 border-gray-700 text-white" required />
+                        <Input
+                          id="name"
+                          name="name"
+                          className="bg-black/60 border-gray-700 text-white"
+                          required
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                        />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Your Email</Label>
@@ -114,13 +161,21 @@ export default function ContactPage() {
                           type="email"
                           className="bg-black/60 border-gray-700 text-white"
                           required
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                         />
                       </div>
                     </div>
 
                     <div className="space-y-2">
                       <Label htmlFor="subject">Subject</Label>
-                      <Input id="subject" name="subject" className="bg-black/60 border-gray-700 text-white" />
+                      <Input
+                        id="subject"
+                        name="subject"
+                        className="bg-black/60 border-gray-700 text-white"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                      />
                     </div>
 
                     <div className="space-y-2">
@@ -131,11 +186,17 @@ export default function ContactPage() {
                         rows={6}
                         className="bg-black/60 border-gray-700 text-white"
                         required
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                       />
                     </div>
 
-                    <Button type="submit" className="bg-ted-red hover:bg-ted-red/90 text-white">
-                      Send Message
+                    <Button
+                      type="submit"
+                      className="bg-ted-red hover:bg-ted-red/90 text-white"
+                      disabled={loading}
+                    >
+                      {loading ? "Sending..." : "Send Message"}
                     </Button>
                   </form>
                 </div>

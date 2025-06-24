@@ -1,23 +1,25 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+      setIsScrolled(window.scrollY > 10);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -27,31 +29,73 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <div className="relative h-10 w-auto">
-              <Image src="/images/tedx-khs-logo.png" alt="TEDx Kigali High School" width={200} height={80} />
+              <Image
+                src="/images/tedx-khs-logo.png"
+                alt="TEDx Kigali High School"
+                width={200}
+                height={80}
+              />
             </div>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/" className="text-sm font-medium hover:text-ted-red transition-colors">
+            <Link
+              href="/"
+              className={`text-sm font-medium transition-colors hover:text-ted-red ${
+                pathname === "/"
+                  ? "text-ted-red underline underline-offset-4 font-bold"
+                  : ""
+              }`}
+            >
               Home
             </Link>
-            <Link href="/about" className="text-sm font-medium hover:text-ted-red transition-colors">
+            <Link
+              href="/about"
+              className={`text-sm font-medium transition-colors hover:text-ted-red ${
+                pathname === "/about"
+                  ? "text-ted-red underline underline-offset-4 font-bold"
+                  : ""
+              }`}
+            >
               About
             </Link>
-            <Link href="/events" className="text-sm font-medium hover:text-ted-red transition-colors">
+            <Link
+              href="/events"
+              className={`text-sm font-medium transition-colors hover:text-ted-red ${
+                pathname === "/events"
+                  ? "text-ted-red underline underline-offset-4 font-bold"
+                  : ""
+              }`}
+            >
               Events
             </Link>
-            <Link href="/contact" className="text-sm font-medium hover:text-ted-red transition-colors">
+            <Link
+              href="/contact"
+              className={`text-sm font-medium transition-colors hover:text-ted-red ${
+                pathname === "/contact"
+                  ? "text-ted-red underline underline-offset-4 font-bold"
+                  : ""
+              }`}
+            >
               Contact
             </Link>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full">Register Now</Button>
+            <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full">
+              Register Now
+            </Button>
           </div>
 
-          <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            {isMobileMenuOpen ? <X className="text-white" /> : <Menu className="text-white" />}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="text-white" />
+            ) : (
+              <Menu className="text-white" />
+            )}
           </button>
         </div>
       </div>
@@ -89,11 +133,13 @@ export function Navbar() {
               >
                 Contact
               </Link>
-              <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full mt-2">Register Now</Button>
+              <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full mt-2">
+                Register Now
+              </Button>
             </nav>
           </div>
         </div>
       )}
     </header>
-  )
+  );
 }

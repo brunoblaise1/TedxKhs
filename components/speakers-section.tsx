@@ -1,58 +1,63 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { useInView } from "framer-motion"
-import Image from "next/image"
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import Image from "next/image";
+import Cursor from "@/components/Cursor";
 
 export function SpeakersSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const speakers = [
     {
-      name: "David Mugisha",
+      name: "Kevine Uwase",
       title: "Education Innovator",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/images/uwase.png",
       topic: "Reimagining Education in Rwanda",
     },
     {
-      name: "Amina Uwase",
+      name: "Bruno Blaise",
       title: "Youth Activist",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/images/bruno.png",
       topic: "The Power of Youth Voice",
     },
     {
       name: "Jean-Paul Habimana",
       title: "Tech Entrepreneur",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/images/jean.png",
       topic: "Building Rwanda's Digital Future",
     },
     {
       name: "Grace Mutoni",
       title: "Climate Advocate",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "/images/grace.png",
       topic: "Sustainable Solutions for Tomorrow",
     },
-  ]
+  ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-black to-black/95 relative overflow-hidden" ref={ref}>
+    <section
+      className="py-20 bg-gradient-to-b from-black to-black/95 relative overflow-hidden"
+      ref={ref}
+    >
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div>
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10">
+      <div className="container mx-auto px-8 lg:px-16 relative z-10">
         <div
-          className={`max-w-5xl mx-auto transition-all duration-1000 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+          className={`max-w-6xl mx-auto transition-all duration-1000 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
               Featured <span className="text-ted-red">Speakers</span>
             </h2>
             <div className="w-20 h-1 bg-ted-red mx-auto mb-6"></div>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Our speakers bring diverse perspectives and inspiring ideas to the TEDx stage. Each speaker has been
-              carefully selected to share their unique insights on our theme "Dare to Dream."
+            <p className="text-base text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Our speakers bring diverse perspectives and inspiring ideas to the
+              TEDx stage. Each speaker has been carefully selected to share
+              their unique insights on our theme "Dare to Dream."
             </p>
           </div>
 
@@ -71,21 +76,25 @@ export function SpeakersSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                     <div className="text-white">
-                      <p className="font-medium text-ted-red">{speaker.topic}</p>
+                      <p className="font-medium text-ted-red text-sm">
+                        {speaker.topic}
+                      </p>
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-white">{speaker.name}</h3>
-                <p className="text-ted-red">{speaker.title}</p>
+                <h3 className="text-lg font-bold text-white">{speaker.name}</h3>
+                <p className="text-ted-red text-sm">{speaker.title}</p>
               </div>
             ))}
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-400">More speakers to be announced. Stay tuned for updates.</p>
+            <p className="text-gray-400 text-sm">
+              More speakers to be announced. Stay tuned for updates.
+            </p>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

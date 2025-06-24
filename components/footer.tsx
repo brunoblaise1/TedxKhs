@@ -4,40 +4,40 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-800 py-12">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-black border-t border-gray-800 py-16">
+      <div className="container mx-auto px-8 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <div className="mb-4">
-              <Image src="/images/tedx-khs-logo.png" alt="TEDx Kigali High School" width={200} height={80} />
+            <div className="mb-6">
+              <Image src="/images/tedx-khs-logo.png" alt="TEDx Kigali High School" width={220} height={90} />
             </div>
-            <p className="text-gray-400 mb-6 text-sm">
+            <p className="text-gray-400 mb-6 text-sm leading-relaxed">
               TEDx Kigali High School Youth is a local gathering where live TED-like talks and performances are shared
               with the community. This event is uniquely developed by each organizing team but all events share common
               features.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-ted-red transition-colors">
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-ted-red transition-colors">
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-ted-red transition-colors">
-                <Youtube className="h-5 w-5" />
+                <Youtube className="h-6 w-6" />
                 <span className="sr-only">YouTube</span>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-ted-red transition-colors">
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-800 pb-2">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-ted-red transition-colors text-sm">
@@ -54,11 +54,16 @@ export function Footer() {
                   Events
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-ted-red transition-colors text-sm">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-800 pb-2">Contact</h3>
+            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">Contact</h3>
             <ul className="space-y-3">
               <li className="text-gray-400 text-sm">Kigali High School</li>
               <li className="text-gray-400 text-sm">Kigali, Rwanda</li>
@@ -68,17 +73,17 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-800 pb-2">About TEDx</h3>
-            <p className="text-gray-400 text-sm">
+            <h3 className="text-lg font-semibold mb-5 border-b border-gray-800 pb-3">About TEDx</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
               x = independently organized TED event. In the spirit of ideas worth spreading, TEDx is a program of local,
               self-organized events that bring people together to share a TED-like experience.
             </p>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} TEDx Kigali High School Youth. All rights reserved.</p>
-          <p className="mt-1">TEDx, x = independently organized TED event.</p>
+          <p className="mt-2">TEDx, x = independently organized TED event.</p>
         </div>
       </div>
     </footer>

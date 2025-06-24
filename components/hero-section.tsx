@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import { Button } from "@/components/ui/button"
-import { motion, useInView, useAnimation } from "framer-motion"
-import { Calendar, MapPin, Users } from "lucide-react"
+import { useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { motion, useInView, useAnimation } from "framer-motion";
+import { Calendar, MapPin, Users } from "lucide-react";
 
 export function HeroSection() {
-  const controls = useAnimation()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
-      controls.start("visible")
+      controls.start("visible");
     }
-  }, [controls, isInView])
+  }, [controls, isInView]);
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-40 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-black">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,43,30,0.1),transparent_70%)]" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-8 lg:px-16 relative z-10 py-20">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             ref={ref}
             initial="hidden"
@@ -89,15 +89,19 @@ export function HeroSection() {
                 transition: { duration: 0.8, delay: 0.6, ease: "easeOut" },
               },
             }}
-            className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 max-w-2xl mx-auto"
+            className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 max-w-xl mx-auto"
           >
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Imagine a day filled with brilliant speakers, thought-provoking conversations, and fresh connections. By
-              organizing a TEDx event, you can create a unique gathering in your community that will unleash new ideas,
-              inspire and inform.
+              Imagine a day filled with brilliant speakers, thought-provoking
+              conversations, and fresh connections. By organizing a TEDx event,
+              you can create a unique gathering in your community that will
+              unleash new ideas, inspire and inform.
             </p>
             <div className="flex justify-center">
-              <Button size="lg" className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full px-8">
+              <Button
+                size="lg"
+                className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full px-8"
+              >
                 Register Now
               </Button>
             </div>
@@ -124,5 +128,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
