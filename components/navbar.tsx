@@ -84,7 +84,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-4">
             <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full">
-              Register Now
+              Buy Ticket
             </Button>
           </div>
 
@@ -102,7 +102,7 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {/* {isMobileMenuOpen && (
+       {/* {isMobileMenuOpen && (
         <div className="md:hidden bg-black/95 border-t border-white">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col gap-4">
@@ -140,7 +140,7 @@ export function Navbar() {
             </nav>
           </div>
         </div>
-      )}
+      )} */}
     </header>
   );
 }

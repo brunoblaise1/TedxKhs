@@ -42,21 +42,11 @@ export function EventTheme() {
               </div>
             </div>
 
-<<<<<<< HEAD
             <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
               <p className="text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and performances are shared with the
                 community. TEDx events are fully planned and coordinated independently, on a community-by-community
                 basis. The content and design of each TEDx event is unique and developed by each organizing team, but
-=======
-            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-8 md:p-10">
-              <p className="text-base text-gray-300 leading-relaxed mb-6">
-                A TEDx event is a local gathering where live TED-like talks and
-                performances are shared with the community. TEDx events are
-                fully planned and coordinated independently, on a
-                community-by-community basis. The content and design of each
-                TEDx event is unique and developed by each organizing team, but
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
                 all events share common features.
               </p>
 
@@ -67,21 +57,7 @@ export function EventTheme() {
                 foundation of innovation and progress.
               </p>
 
-<<<<<<< HEAD
             
-=======
-              <div className="flex flex-wrap gap-4 mt-8">
-                <Button className="bg-ted-red hover:bg-ted-red/90 text-white text-sm px-4 py-1.5 rounded-full">
-                  Register Now
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-ted-red text-ted-red hover:bg-ted-red/10 text-sm px-4 py-1.5 rounded-full"
-                >
-                  Learn More
-                </Button>
-              </div>
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             </div>
           </div>
         </div>

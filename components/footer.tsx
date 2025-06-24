@@ -16,7 +16,7 @@ export function Footer() {
               with the community. This event is uniquely developed by each organizing team but all events share common
               features.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-ted-red transition-colors">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
@@ -33,16 +33,11 @@ export function Footer() {
                 <Twitter className="h-6 w-6" />
                 <span className="sr-only">Twitter</span>
               </Link>
-            </div>
+            </div> */}
           </div>
 
-<<<<<<< HEAD
-          {/* <div>
+           {/* <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Quick Links</h3>
-=======
-          <div>
-            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">Quick Links</h3>
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-ted-red transition-colors text-sm">
@@ -65,42 +60,28 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-<<<<<<< HEAD
-          {/* <div>
+           {/* <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Contact</h3>
-=======
-          <div>
-            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">Contact</h3>
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             <ul className="space-y-3">
               <li className="text-gray-400 text-sm">Kigali High School</li>
               <li className="text-gray-400 text-sm">Kigali, Rwanda</li>
               <li className="text-gray-400 text-sm">info@tedxkigalihighschool.org</li>
               <li className="text-gray-400 text-sm">+250 788 123 456</li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
-<<<<<<< HEAD
             <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">About TEDx</h3>
             <p className="text-gray-400 text-sm">
-=======
-            <h3 className="text-lg font-semibold mb-5 border-b border-white pb-3">About TEDx</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
               x = independently organized TED event. In the spirit of ideas worth spreading, TEDx is a program of local,
               self-organized events that bring people together to share a TED-like experience.
             </p>
           </div>
         </div>
 
-<<<<<<< HEAD
         <div className="border-t border-white mt-12 pt-6 text-center text-gray-500 text-sm">
-=======
-        <div className="border-t border-white mt-16 pt-8 text-center text-gray-500 text-sm">
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
           <p>© {new Date().getFullYear()} TEDx Kigali High School Youth. All rights reserved.</p>
           <p className="mt-2">TEDx, x = independently organized TED event.</p>
         </div>
