@@ -10,16 +10,8 @@ export function EventTheme() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-<<<<<<< HEAD
     <section className="bg-[url(/images/thembg.png)]">
       {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div> */}
-=======
-    <section
-      className="py-20 bg-gradient-to-b from-black to-black/95 relative overflow-hidden"
-      ref={ref}
-    >
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div>
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
 

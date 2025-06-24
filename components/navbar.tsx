@@ -102,13 +102,8 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
-<<<<<<< HEAD
       {/* {isMobileMenuOpen && (
         <div className="md:hidden bg-black/95 border-t border-white">
-=======
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-black/95 border-t border-gray-800">
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col gap-4">
               <Link

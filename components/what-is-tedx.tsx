@@ -22,15 +22,8 @@ export default function WhatIsTedx() {
 
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         <div
-<<<<<<< HEAD
           className={`flex flex-row justify-between max-w-3xl mx-auto transition-all duration-1000 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
-=======
-          className={`max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
-            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
         >
-<<<<<<< HEAD
           <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
             What is <span className="text-ted-red">TEDx</span>?
@@ -73,20 +66,6 @@ export default function WhatIsTedx() {
                 </p>
               </li>
             </ul>
-=======
-          <div className="relative">
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-ted-red/10 rounded-full" />
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-ted-red/10 rounded-full" />
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <Image
-                src="/images/highschool.png"
-                alt="High School Group"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover"
-              />
-            </div>
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
           </div>
 
           <div className="transition-all duration-1000 delay-300 bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 md:p-10 flex flex-col items-center md:items-start">
@@ -120,7 +99,6 @@ export default function WhatIsTedx() {
               </Button>
             </div>
           </div>
-<<<<<<< HEAD
         
 
 <div>
@@ -168,8 +146,6 @@ export default function WhatIsTedx() {
             </ul>
           </div>
 </div>
-=======
->>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
         </div>
       </div>
     </section>

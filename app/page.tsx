@@ -14,11 +14,11 @@ export default function Home() {
       <Particles />
       <Navbar />
       <HeroSection />
-      <WhatIsTedx />
+      {/* <WhatIsTedx /> */}
       <EventTheme />
-      <SpeakersSection />
+      {/* <SpeakersSection />
       <PartnersSection />
-      <CTASection />
+      <CTASection /> */}
       <Footer />
     </main>
   );
