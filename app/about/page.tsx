@@ -53,6 +53,24 @@ export default function AboutPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
+      <section className="py-16 bg-black">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 mb-10">
+              <h2 className="text-2xl font-bold mb-6 text-ted-red">What is TEDx?</h2>
+              <div className="space-y-4 text-gray-300">
+                <p>
+                  TEDx is a program of local, self-organized events that bring people together to share a TED-like
+                  experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and
+                  connection. These local, self-organized events are branded TEDx, where x = independently organized TED
+                  event.
+                </p>
+                <p>
+                  The TED Conference provides general guidance for the TEDx program, but individual TEDx events are
+                  self-organized. (Subject to certain rules and regulations.)
+                </p>
+=======
       {/* Our Journey Timeline Section */}
       <section className="py-24 bg-gradient-to-b from-black via-black/90 to-black/95">
         <div className="container mx-auto px-4">
@@ -90,16 +108,54 @@ export default function AboutPage() {
                     {item.description}
                   </div>
                 </div>
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
               </div>
             ))}
           </div>
         </div>
       </section>
 
+<<<<<<< HEAD
+            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 mb-10">
+              <h2 className="text-2xl font-bold mb-6 text-ted-red">About TEDx Kigali High School Youth</h2>
+              <div className="space-y-4 text-gray-300">
+                <p>
+                  TEDx Kigali High School Youth is a student-led initiative that aims to bring the spirit of TED to our
+                  school community. Our event provides a platform for students, educators, and community members to
+                  share their ideas, experiences, and visions for the future.
+                </p>
+                <p>
+                  Our mission is to inspire and empower young minds to think critically, dream boldly, and take action
+                  to create positive change in their communities and beyond. We believe that everyone has ideas worth
+                  spreading, and we're committed to creating a space where those ideas can flourish.
+                </p>
+              </div>
+            </div>
+=======
       <section className="py-24 bg-black relative overflow-hidden">
         <div className="absolute -top-40 -left-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
 
+<<<<<<< HEAD
+            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-6 text-ted-red">Our Team</h2>
+              <div className="space-y-4 text-gray-300">
+                <p>
+                  TEDx Kigali High School Youth is organized by a dedicated team of students, with guidance from faculty
+                  advisors. Our team members are passionate about ideas worth spreading and committed to creating an
+                  exceptional TEDx experience.
+                </p>
+                <p>
+                  We work together to curate speakers, design the event experience, manage logistics, and promote the
+                  event to our community. Each team member brings unique skills and perspectives to the table, united by
+                  our shared vision of inspiring and empowering our peers.
+                </p>
+              </div>
+              <div className="mt-8 text-center">
+                <Button className="bg-ted-red hover:bg-ted-red/90 text-white">Meet Our Team</Button>
+              </div>
+=======
         <div className="container mx-auto px-8 lg:px-16 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto text-left">
             <div>
@@ -117,6 +173,7 @@ export default function AboutPage() {
                 Meanwhile, independently run TEDx events help share ideas in
                 communities around the world
               </p>
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             </div>
             <div>
               <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 text-white">
@@ -151,6 +208,13 @@ export default function AboutPage() {
               There are many ways to be part of the TEDx Kigali High School
               Youth experience.
             </p>
+<<<<<<< HEAD
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 hover:border-ted-red/50 transition-colors">
+                <h3 className="text-xl font-bold mb-3">Attend</h3>
+                <p className="text-gray-400 mb-4">Join us for a day of inspiring talks and connections.</p>
+                <Button variant="outline" className="w-full border-ted-red text-ted-red hover:bg-ted-red/10">
+=======
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Attend Card */}
               <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 flex flex-col items-center text-center">
@@ -162,9 +226,16 @@ export default function AboutPage() {
                   variant="outline"
                   className="w-full border-ted-red text-ted-red hover:bg-ted-red/10 text-base py-2 rounded-md font-semibold transition-colors"
                 >
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
                   Register
                 </Button>
               </div>
+<<<<<<< HEAD
+              <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 hover:border-ted-red/50 transition-colors">
+                <h3 className="text-xl font-bold mb-3">Sponsor</h3>
+                <p className="text-gray-400 mb-4">Support our event and connect with our audience.</p>
+                <Button variant="outline" className="w-full border-ted-red text-ted-red hover:bg-ted-red/10">
+=======
               {/* Sponsor Card */}
               <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 flex flex-col items-center text-center">
                 <h3 className="text-xl font-bold mb-3 text-white">Sponsor</h3>
@@ -175,6 +246,7 @@ export default function AboutPage() {
                   variant="outline"
                   className="w-full border-ted-red text-ted-red hover:bg-ted-red/10 text-base py-2 rounded-md font-semibold transition-colors"
                 >
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
                   Learn More
                 </Button>
               </div>

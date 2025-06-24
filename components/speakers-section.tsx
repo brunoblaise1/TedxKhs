@@ -67,7 +67,7 @@ export function SpeakersSection() {
                 key={index}
                 className={`group transition-all duration-1000 delay-${index * 100} ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}
               >
-                <div className="relative overflow-hidden rounded-xl mb-4 aspect-square bg-black/40 backdrop-blur-sm border border-gray-800">
+                <div className="relative overflow-hidden rounded-xl mb-4 aspect-square bg-black/40 backdrop-blur-sm border border-white">
                   <Image
                     src={speaker.image || "/placeholder.svg"}
                     alt={speaker.name}

@@ -137,7 +137,7 @@ export default function ContactPage() {
               </div>
 
               <div className="md:col-span-2">
-                <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8">
+                <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
                   <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
 
                   <form className="space-y-6" onSubmit={handleSubmit}>
@@ -213,7 +213,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-6 text-center">Find Us</h2>
-            <div className="rounded-xl overflow-hidden shadow-md h-96 border border-gray-800">
+            <div className="rounded-xl overflow-hidden shadow-md h-96 border border-white">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5088261603225!2d30.059905!3d-1.9441943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5a86e122cd7%3A0x15b74d27bc0dea9d!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2srw!4v1621345678901!5m2!1sen!2srw"
                 width="100%"

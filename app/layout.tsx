@@ -24,9 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+<<<<<<< HEAD
+      <head>
+        <link rel="Tedx icon" href="/images/tedxicon.png" type="image/x-icon" />
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} font-sans text-white`}>
+=======
       <body
         className={`${inter.variable} ${playfair.variable} font-sans bg-black text-white`}
       >
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>

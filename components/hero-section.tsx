@@ -17,8 +17,13 @@ export function HeroSection() {
   }, [controls, isInView]);
 
   return (
+<<<<<<< HEAD
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div className="absolute inset-0 z-0">
+=======
     <section className="relative min-h-screen flex items-center pt-40 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-black">
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,43,30,0.1),transparent_70%)]" />
       </div>
@@ -89,7 +94,11 @@ export function HeroSection() {
                 transition: { duration: 0.8, delay: 0.6, ease: "easeOut" },
               },
             }}
+<<<<<<< HEAD
+            className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 max-w-2xl mx-auto"
+=======
             className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-6 md:p-8 max-w-xl mx-auto"
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
           >
             <p className="text-gray-300 mb-6 leading-relaxed">
               Imagine a day filled with brilliant speakers, thought-provoking

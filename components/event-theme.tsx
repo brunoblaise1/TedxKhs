@@ -10,11 +10,16 @@ export function EventTheme() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
+<<<<<<< HEAD
+    <section className="bg-[url(/images/thembg.png)]">
+      {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div> */}
+=======
     <section
       className="py-20 bg-gradient-to-b from-black to-black/95 relative overflow-hidden"
       ref={ref}
     >
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div>
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
       <div className="absolute -top-40 -left-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
 
@@ -45,6 +50,13 @@ export function EventTheme() {
               </div>
             </div>
 
+<<<<<<< HEAD
+            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
+              <p className="text-gray-300 leading-relaxed mb-6">
+                A TEDx event is a local gathering where live TED-like talks and performances are shared with the
+                community. TEDx events are fully planned and coordinated independently, on a community-by-community
+                basis. The content and design of each TEDx event is unique and developed by each organizing team, but
+=======
             <div className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-xl p-8 md:p-10">
               <p className="text-base text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and
@@ -52,6 +64,7 @@ export function EventTheme() {
                 fully planned and coordinated independently, on a
                 community-by-community basis. The content and design of each
                 TEDx event is unique and developed by each organizing team, but
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
                 all events share common features.
               </p>
 
@@ -62,6 +75,9 @@ export function EventTheme() {
                 foundation of innovation and progress.
               </p>
 
+<<<<<<< HEAD
+            
+=======
               <div className="flex flex-wrap gap-4 mt-8">
                 <Button className="bg-ted-red hover:bg-ted-red/90 text-white text-sm px-4 py-1.5 rounded-full">
                   Register Now
@@ -73,6 +89,7 @@ export function EventTheme() {
                   Learn More
                 </Button>
               </div>
+>>>>>>> c0d636954f715bce4e3f87860fbbfe02429fe8a3
             </div>
           </div>
         </div>
