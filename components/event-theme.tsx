@@ -17,14 +17,14 @@ export function EventTheme() {
         <div
           className={`max-w-6xl mx-auto transition-all duration-1000 `}
         >
-          <div className="text-center mb-12">
+          <div className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-2">
               Event Theme: <span className="text-ted-red">Dare to Dream</span>
             </h2>
             <div className="w-20 h-1 bg-ted-red mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
             {/* <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-ted-red/30 rounded-xl"></div>
               <div className="relative overflow-hidden rounded-xl">
@@ -38,7 +38,7 @@ export function EventTheme() {
               </div>
             </div> */}
 
-            <div className=" rounded-xl p-6 md:p-8">
+            <div className="p-6 md:p-8">
               <p className="text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and performances are shared with the
                 community. TEDx events are fully planned and coordinated independently, on a community-by-community
