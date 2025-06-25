@@ -14,7 +14,7 @@ export default function Home() {
       <Particles />
       <Navbar />
       <HeroSection />
-      {/* <WhatIsTedx /> */}
+      {/ <WhatIsTedx /> */}
       <EventTheme />
       {/* <SpeakersSection />
       <PartnersSection />
