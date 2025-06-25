@@ -20,7 +20,7 @@ export default function Home() {
       <PartnersSection />
       <CTASection /> */}
       <Footer />
-      <div className="noise"></div>
+      
     </main>
   );
 }

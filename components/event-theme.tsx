@@ -12,10 +12,8 @@ export function EventTheme() {
   return (
     <section className="bg-[url(/images/thembg.png)]">
       {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div> */}
-      <div className="absolute -top-40 -left-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-40 -right-40 w-80 h-80 bg-ted-red/5 rounded-full blur-3xl"></div>
 
-      <div className="container mx-auto px-8 lg:px-16 relative z-10">
+      <div className="container mx-auto px-8 lg:px-16 relative z-40">
         <div
           className={`max-w-6xl mx-auto transition-all duration-1000 ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"

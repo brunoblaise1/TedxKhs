@@ -17,14 +17,14 @@ export function HeroSection() {
   }, [controls, isInView])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section  className="bg-[url(/images/hero.webp)]">
       {/* <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,43,30,0.1),transparent_70%)]" />
       </div> */}
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
-        <div className="bg-[url(/images/hero.webp) max-w-4xl mx-auto">
+        <div className=" max-w-4xl mx-auto">
        
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               <span className="text-white">Kigali High School</span>
