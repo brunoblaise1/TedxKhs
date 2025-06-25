@@ -24,21 +24,8 @@ export function HeroSection() {
       </div> */}
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { duration: 0.8, ease: "easeOut" },
-              },
-            }}
-            className="text-center mb-8"
-          >
+        <div className="max-w-4xl mx-auto bg-[url(/images/hero.webp)">
+       
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               <span className="text-white">Kigali High School</span>
               <br />
@@ -47,7 +34,7 @@ export function HeroSection() {
             <p className="text-xl md:text-2xl text-gray-300 font-light">
               Theme: <span className="font-medium">Past . Present . Future</span>
             </p>
-          </motion.div>
+       
 
           <motion.div
             initial="hidden"

@@ -5,10 +5,20 @@
 
 body {
   overflow-x: hidden;
- background-image: linear-gradient(#000,#000),url(https://cdn.prod.website-files.com/66e9e24b881aba6af256571b/66e9e24b881aba6af256575a_ezgif.com-optimize.gif) !important;
-  background-position: 0 0,0 0;
-  background-size: auto,auto;
-  background-attachment: scroll,fixed;
+
+}
+.noise{
+  z-index: 9999;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("https://assets-global.website-files.com/642a8227ec2dcc99dcfde26a/649bc31c91f63d461f2f58a0_noise.webp");
+  /* background-position: 0 0; */
+  background-size: auto;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 @layer base {
   :root {
