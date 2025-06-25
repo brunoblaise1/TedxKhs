@@ -17,34 +17,34 @@ export default function ContactPage() {
   const [message, setMessage] = useState("")
   const [loading, setLoading] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setLoading(true)
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault()
+  //   setLoading(true)
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, subject, message }),
-      })
+  //   try {
+  //     const res = await fetch("/api/contact", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ name, email, subject, message }),
+  //     })
 
-      if (res.ok) {
-        toast.success("Message sent successfully!")
-        setName("")
-        setEmail("")
-        setSubject("")
-        setMessage("")
-      } else {
-        toast.error("Failed to send message.")
-      }
-    } catch (error) {
-      toast.error("An error occurred. Please try again.")
-    } finally {
-      setLoading(false)
-    }
-  }
+  //     if (res.ok) {
+  //       toast.success("Message sent successfully!")
+  //       setName("")
+  //       setEmail("")
+  //       setSubject("")
+  //       setMessage("")
+  //     } else {
+  //       toast.error("Failed to send message.")
+  //     }
+  //   } catch (error) {
+  //     toast.error("An error occurred. Please try again.")
+  //   } finally {
+  //     setLoading(false)
+  //   }
+  // }
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
                   <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
 
-                  <form className="space-y-6" onSubmit={handleSubmit}>
+                  <form className="space-y-6">
                     <div className="grid sm:grid-cols-2 gap-6">
                       <div className="space-y-2">
                         <Label htmlFor="name">Your Name</Label>
