@@ -5,7 +5,7 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react"
 export function Footer() {
   return (
     <footer className=" py-12">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto">
         {/* <div>
           <div> */}
             {/*  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" */}
@@ -82,7 +82,7 @@ export function Footer() {
           </div>
         </div> */}
 
-        <div className="border-t  mt-12 pt-6 text-center text-gray-500 text-sm">
+        <div className="text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} TEDx Kigali High School Youth. All rights reserved.</p>
           <p className="mt-2">TEDx, x = independently organized TED event.</p>
         </div>
