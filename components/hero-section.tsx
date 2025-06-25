@@ -17,12 +17,12 @@ export function HeroSection() {
   }, [controls, isInView])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,43,30,0.1),transparent_70%)]" />
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
+      <div className="mx-auto relative z-10">
         <div className="max-w-4xl mx-auto">
        
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
@@ -31,7 +31,7 @@ export function HeroSection() {
               <span className="text-ted-red font-display">Youth</span>
             </h1>
             
-            <img src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
+            <img className="h-40" src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
        
 
           <motion.div
