@@ -31,7 +31,7 @@ export function HeroSection() {
               <span className="text-ted-red font-display">Youth</span>
             </h1>
             
-            <img src="/images/hero.png" alt="Hero" height={600}  weight={600}/>
+            <img src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
        
 
           <motion.div
@@ -47,15 +47,15 @@ export function HeroSection() {
             }}
             className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12"
           >
-            <div className="flex items-center gap-2 text-gray-300">
+            {/* <div className="flex items-center gap-2 text-gray-300">
               <Calendar className="h-5 w-5 text-ted-red" />
               <span>August 29, 2025</span>
-            </div>
-            <div className="hidden md:block w-1 h-1 rounded-full bg-ted-red"></div>
-            <div className="flex items-center gap-2 text-gray-300">
+            </div> */}
+            {/* <div className="hidden md:block w-1 h-1 rounded-full bg-ted-red"></div> */}
+            {/* <div className="flex items-center gap-2 text-gray-300">
               <MapPin className="h-5 w-5 text-ted-red" />
               <span>Venue: Zaria Court (TBC)</span>
-            </div>
+            </div> */}
             {/* <div className="hidden md:block w-1 h-1 rounded-full bg-ted-red"></div>
             <div className="flex items-center gap-2 text-gray-300">
               <Users className="h-5 w-5 text-ted-red" />
