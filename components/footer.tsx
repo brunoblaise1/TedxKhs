@@ -4,7 +4,7 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-white py-12">
+    <footer className="border-t  py-12">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
@@ -37,7 +37,7 @@ export function Footer() {
           </div>
 
            {/* <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b  pb-2">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-ted-red transition-colors text-sm">
@@ -63,7 +63,7 @@ export function Footer() {
           </div> */}
 
            {/* <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b  pb-2">Contact</h3>
             <ul className="space-y-3">
               <li className="text-gray-400 text-sm">Kigali High School</li>
               <li className="text-gray-400 text-sm">Kigali, Rwanda</li>
@@ -73,7 +73,7 @@ export function Footer() {
           </div> */}
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-white pb-2">About TEDx</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b  pb-2">About TEDx</h3>
             <p className="text-gray-400 text-sm">
               x = independently organized TED event. In the spirit of ideas worth spreading, TEDx is a program of local,
               self-organized events that bring people together to share a TED-like experience.
@@ -81,7 +81,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white mt-12 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t  mt-12 pt-6 text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} TEDx Kigali High School Youth. All rights reserved.</p>
           <p className="mt-2">TEDx, x = independently organized TED event.</p>
         </div>

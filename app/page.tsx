@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white relative">
+    <main className="min-h-screen  text-white relative">
       {/* <Particles /> */}
       <Navbar />
       <HeroSection />

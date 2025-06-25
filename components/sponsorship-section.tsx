@@ -71,9 +71,9 @@ export function SponsorshipSection() {
             {sponsorshipPackages.map((pkg, index) => (
               <Card
                 key={index}
-                className={`bg-black/40 backdrop-blur-sm border border-white overflow-hidden transition-all duration-500 hover:border-ted-red/50 hover:shadow-[0_0_15px_rgba(230,43,30,0.15)] ${index === 0 ? "md:transform md:-translate-y-4" : ""}`}
+                className={`bg-black/40 backdrop-blur-sm border  overflow-hidden transition-all duration-500 hover:border-ted-red/50 hover:shadow-[0_0_15px_rgba(230,43,30,0.15)] ${index === 0 ? "md:transform md:-translate-y-4" : ""}`}
               >
-                <div className="p-6 border-b border-white">
+                <div className="p-6 border-b ">
                   <h3 className="text-xl font-bold">{pkg.name}</h3>
                   <div className="mt-2">
                     <span className="text-3xl font-bold text-ted-red">{pkg.price}</span>

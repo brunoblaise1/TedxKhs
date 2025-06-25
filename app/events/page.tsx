@@ -27,8 +27,8 @@ export default function EventsPage() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-10">Upcoming Event</h2>
 
-            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl overflow-hidden mb-16">
-              <div className="p-6 md:p-8 border-b border-white">
+            <div className="bg-black/40 backdrop-blur-sm border  rounded-xl overflow-hidden mb-16">
+              <div className="p-6 md:p-8 border-b ">
                 <h3 className="text-2xl font-bold mb-2">TEDx Kigali High School Youth 2025</h3>
                 <p className="text-ted-red font-medium mb-6">Theme: Dare to Dream</p>
 

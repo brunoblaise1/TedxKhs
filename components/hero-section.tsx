@@ -76,7 +76,7 @@ export function HeroSection() {
                 transition: { duration: 0.8, delay: 0.6, ease: "easeOut" },
               },
             }}
-            className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 max-w-2xl mx-auto"
+            className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 md:p-8 max-w-2xl mx-auto"
           >
             <p className="text-gray-300 mb-6 leading-relaxed">
               Imagine a day filled with brilliant speakers, thought-provoking conversations, and fresh connections. By

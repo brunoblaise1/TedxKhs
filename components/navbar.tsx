@@ -39,7 +39,7 @@ export function Navbar() {
             </div>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          {/* <nav className="hidden md:flex items-center gap-6">
             <Link
               href="/"
               className={`text-sm font-medium transition-colors hover:text-ted-red ${
@@ -80,7 +80,7 @@ export function Navbar() {
             >
               Contact
             </Link>
-          </nav>
+          </nav> */}
 
           <div className="hidden md:flex items-center gap-4">
             <Button className="bg-ted-red hover:bg-ted-red/90 text-white rounded-full">
@@ -103,33 +103,33 @@ export function Navbar() {
 
       {/* Mobile menu */}
        {/* {isMobileMenuOpen && (
-        <div className="md:hidden bg-black/95 border-t border-white">
+        <div className="md:hidden bg-black/95 border-t ">
           <div className="container mx-auto px-4 py-4">
             <nav className="flex flex-col gap-4">
               <Link
                 href="/"
-                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b border-white"
+                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b "
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b border-white"
+                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b "
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/events"
-                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b border-white"
+                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b "
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Events
               </Link>
               <Link
                 href="/contact"
-                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b border-white"
+                className="text-sm font-medium hover:text-ted-red transition-colors py-2 border-b "
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact

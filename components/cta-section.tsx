@@ -33,7 +33,7 @@ export function CTASection() {
               <Button
                 asChild
                 variant="outline"
-                className="border-white text-white hover:bg-white/10 font-medium px-6 py-2 rounded-full"
+                className=" text-white hover:bg-white/10 font-medium px-6 py-2 rounded-full"
               >
                 <a>Contact Us</a>
               </Button>

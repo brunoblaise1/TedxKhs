@@ -68,7 +68,7 @@ export default function WhatIsTedx() {
             </ul>
           </div>
 
-          <div className="transition-all duration-1000 delay-300 bg-black/40 backdrop-blur-sm border border-white rounded-xl p-8 md:p-10 flex flex-col items-center md:items-start">
+          <div className="transition-all duration-1000 delay-300 bg-black/40 backdrop-blur-sm border  rounded-xl p-8 md:p-10 flex flex-col items-center md:items-start">
             <div className="w-full flex flex-col items-center mb-6">
               <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white text-center">
                 ABOUT <span className="text-ted-red">US</span>

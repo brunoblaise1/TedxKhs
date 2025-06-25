@@ -24,7 +24,7 @@ export function NewsletterSection() {
             <Input
               type="email"
               placeholder="Enter your email"
-              className="bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white"
+              className="bg-white/10 /20 text-white placeholder:text-white/60 focus:"
               required
             />
             <Button type="submit" className="bg-white text-ted-red hover:bg-white/90 font-medium">

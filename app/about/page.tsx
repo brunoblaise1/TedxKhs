@@ -56,7 +56,7 @@ export default function AboutPage() {
     //   <section className="py-16 bg-black">
     //     <div className="container mx-auto px-4 md:px-6">
     //       <div className="max-w-3xl mx-auto">
-    //         <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 mb-10">
+    //         <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 md:p-8 mb-10">
     //           <h2 className="text-2xl font-bold mb-6 text-ted-red">What is TEDx?</h2>
     //           <div className="space-y-4 text-gray-300">
     //             <p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
     //     </div>
     //   </section>
 
-    //         <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8 mb-10">
+    //         <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 md:p-8 mb-10">
     //           <h2 className="text-2xl font-bold mb-6 text-ted-red">About TEDx Kigali High School Youth</h2>
     //           <div className="space-y-4 text-gray-300">
     //             <p>
@@ -91,7 +91,7 @@ export default function AboutPage() {
     //           </div>
     //         </div>
 
-    //         <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
+    //         <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 md:p-8">
     //           <h2 className="text-2xl font-bold mb-6 text-ted-red">Our Team</h2>
     //           <div className="space-y-4 text-gray-300">
     //             <p>
@@ -143,14 +143,14 @@ export default function AboutPage() {
     //           Youth experience.
     //         </p>
     //         <div className="grid sm:grid-cols-2 gap-6">
-    //           <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 hover:border-ted-red/50 transition-colors">
+    //           <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 hover:border-ted-red/50 transition-colors">
     //             <h3 className="text-xl font-bold mb-3">Attend</h3>
     //             <p className="text-gray-400 mb-4">Join us for a day of inspiring talks and connections.</p>
     //             <Button variant="outline" className="w-full border-ted-red text-ted-red hover:bg-ted-red/10">
     //               Register
     //             </Button>
     //           </div>
-    //           <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 hover:border-ted-red/50 transition-colors">
+    //           <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 hover:border-ted-red/50 transition-colors">
     //             <h3 className="text-xl font-bold mb-3">Sponsor</h3>
     //             <p className="text-gray-400 mb-4">Support our event and connect with our audience.</p>
     //             <Button variant="outline" className="w-full border-ted-red text-ted-red hover:bg-ted-red/10">

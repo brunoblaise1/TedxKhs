@@ -42,7 +42,7 @@ export function EventTheme() {
               </div>
             </div>
 
-            <div className="bg-black/40 backdrop-blur-sm border border-white rounded-xl p-6 md:p-8">
+            <div className="bg-black/40 backdrop-blur-sm border  rounded-xl p-6 md:p-8">
               <p className="text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and performances are shared with the
                 community. TEDx events are fully planned and coordinated independently, on a community-by-community

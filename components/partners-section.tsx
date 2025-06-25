@@ -42,7 +42,7 @@ export function PartnersSection() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-black/40 backdrop-blur-sm border border-white rounded-lg p-4 flex items-center justify-center hover:border-ted-red/50 transition-all duration-300"
+                className="bg-black/40 backdrop-blur-sm border  rounded-lg p-4 flex items-center justify-center hover:border-ted-red/50 transition-all duration-300"
               >
                 <Image
                   src={partner.logo || "/placeholder.svg"}
