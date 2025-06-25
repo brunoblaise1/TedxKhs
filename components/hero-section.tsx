@@ -24,7 +24,7 @@ export function HeroSection() {
       </div> */}
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-20">
-        <div className="max-w-4xl mx-auto bg-[url(/images/hero.webp)">
+        <div className="bg-[url(/images/hero.webp) max-w-4xl mx-auto">
        
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               <span className="text-white">Kigali High School</span>

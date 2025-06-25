@@ -8,17 +8,15 @@ body {
 
 }
 .noise{
-  z-index: 9999;
+z-index: 2;
+  width: 100%;
   height: 100%;
-  min-height: 100%;
-  background-image: url("https://assets-global.website-files.com/642a8227ec2dcc99dcfde26a/649bc31c91f63d461f2f58a0_noise.webp");
-  /* background-position: 0 0; */
-  background-size: auto;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
+  opacity: .3;
+  mix-blend-mode: soft-light;
+  background-image: url("https://assets-global.website-files.com/622a7ac885d80f68b2eaa9a8/622a7ac885d80f5010eaaa1a_402107790_STATIC_NOISE_400.gif");
+  background-position: 50%;
+  background-size: 200px;
+  position: relative;
 }
 @layer base {
   :root {
