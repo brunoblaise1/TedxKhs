@@ -4,7 +4,8 @@
 
 
 body {
- background-image: linear-gradient(#121212bf,#121212bf),url(https://cdn.prod.website-files.com/66e9e24b881aba6af256571b/66e9e24b881aba6af256575a_ezgif.com-optimize.gif) !important;
+  overflow-y: hidden;
+ background-image: linear-gradient(#000,#000),url(https://cdn.prod.website-files.com/66e9e24b881aba6af256571b/66e9e24b881aba6af256575a_ezgif.com-optimize.gif) !important;
   background-position: 0 0,0 0;
   background-size: auto,auto;
   background-attachment: scroll,fixed;

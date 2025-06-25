@@ -6,12 +6,12 @@ import { EventTheme } from "@/components/event-theme";
 import { Footer } from "@/components/footer";
 // import { SpeakersSection } from "@/components/speakers-section";
 // import { PartnersSection } from "@/components/partners-section";
-import { Particles } from "@/components/particles";
+// import { Particles } from "@/components/particles";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white relative">
-      <Particles />
+      {/* <Particles /> */}
       <Navbar />
       <HeroSection />
       {/* {/ <WhatIsTedx /> */} 
