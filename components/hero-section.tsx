@@ -22,12 +22,12 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(230,43,30,0.1),transparent_70%)]" />
       </div>
 
-      <div className="mx-auto relative z-10">
-        <div className="max-w-4xl mx-auto">
-           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-              <span className="text-white">The Future</span>
+      <div className="mx-auto relative z-10 text-center">
+        <div className="mx-auto">
+           <h1 className="text-xl font-bold mb-4 leading-tight">
+              <span className="text-white ">The Future</span>
             </h1>
-            <img className="md:h-[30rem] h-[50rem]" src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
+            <img className="h-[30rem] md:h-[50rem]" src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
               <span className="font-display">Agahugu katazi umuco karacika</span>
             </h1>
