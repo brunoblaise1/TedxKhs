@@ -4,10 +4,10 @@ import { Instagram, Facebook, Youtube, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="py-12">
+    <footer className=" py-12">
       <div className="container mx-auto px-4 md:px-6">
-        <div>
-          <div>
+        {/* <div>
+          <div> */}
             {/*  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10" */}
             {/* <div className="mb-6">
               <Image src="/images/tedx-khs-logo.png" alt="TEDx Kigali High School" width={220} height={90} />
@@ -35,7 +35,7 @@ export function Footer() {
                 <span className="sr-only">Twitter</span>
               </Link>
             </div> */}
-          </div>
+          {/* </div> */}
 
            {/* <div>
             <h3 className="text-lg font-semibold mb-4 border-b  pb-2">Quick Links</h3>
