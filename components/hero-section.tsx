@@ -25,7 +25,7 @@ export function HeroSection() {
       <div className="mx-auto relative z-10 text-center">
         <div className="mx-auto">
            <h1 className="text-xl font-bold mb-4 leading-tight">
-              <span className="text-white ">The Future</span>
+              <span className="text-white ">What the Future hold</span>
             </h1>
             <img className="h-[30rem] md:h-[50rem]" src="/images/hero2.png" alt="Hero" height={600}  weight={600}/>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
