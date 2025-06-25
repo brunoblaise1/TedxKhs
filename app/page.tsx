@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
-import WhatIsTedx from "@/components/what-is-tedx";
+// import WhatIsTedx from "@/components/what-is-tedx";
 import { EventTheme } from "@/components/event-theme";
 // import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
@@ -14,7 +14,7 @@ export default function Home() {
       <Particles />
       <Navbar />
       <HeroSection />
-      <WhatIsTedx />
+      {/* <WhatIsTedx /> */}
       <EventTheme />
       {/* <SpeakersSection />
       <PartnersSection />
