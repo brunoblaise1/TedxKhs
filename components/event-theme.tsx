@@ -10,7 +10,7 @@ export function EventTheme() {
   const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   return (
-    <section className="bg-[url(/images/thembg.png)]">
+    <section className="bg-[url(/images/thembg.png)] text-center">
       {/* <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-ted-red to-transparent opacity-30"></div> */}
 
       <div className="container mx-auto px-8 lg:px-16 relative z-40">
@@ -25,7 +25,7 @@ export function EventTheme() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="relative">
+            {/* <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-ted-red/30 rounded-xl"></div>
               <div className="relative overflow-hidden rounded-xl">
                 <Image
@@ -36,9 +36,9 @@ export function EventTheme() {
                   className="w-full h-auto"
                 />
               </div>
-            </div>
+            </div> */}
 
-            <div className=" backdrop-blur-sm border  rounded-xl p-6 md:p-8">
+            <div className=" rounded-xl p-6 md:p-8">
               <p className="text-gray-300 leading-relaxed mb-6">
                 A TEDx event is a local gathering where live TED-like talks and performances are shared with the
                 community. TEDx events are fully planned and coordinated independently, on a community-by-community
@@ -52,8 +52,6 @@ export function EventTheme() {
                 pursuing one's aspirations. We believe that dreams are the
                 foundation of innovation and progress.
               </p>
-
-            
             </div>
           </div>
         </div>
